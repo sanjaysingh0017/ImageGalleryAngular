@@ -2,7 +2,7 @@
 <div class="toolbar" role="banner" [ngClass]="{'blur' : showFullView}">
 
   <span style="margin-left: 20px;">Image Gallery</span>
-  <div class="spacer"></div>
+  <div class="spacer"><button (click)="startSlides()" style="height: 32px;border-radius: 5px; border-color: brown;">Start Slides</button></div>
 </div>
 
 <div class="content" role="main" [ngClass]="{'blur' : showFullView}">

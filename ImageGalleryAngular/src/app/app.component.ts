@@ -21,5 +21,19 @@ export class AppComponent {
   }
   closeFullView() {
     this.showFullView = false;
+    clearInterval(this.interval);
+  }
+  interval: any;
+  startSlides() {
+    this.src = "assets/"+1+'.jpg';
+    this.showFullView = true;
+      var i=2;
+      this.interval = setInterval( () => {
+        if(i > 30) {
+          i = 1;
+        }
+        this.src = "assets/"+i+'.jpg';
+          i++;
+      }, 2000, this );
   }
 }

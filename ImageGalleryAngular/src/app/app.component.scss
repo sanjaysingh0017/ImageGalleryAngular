@@ -22,6 +22,9 @@
 
   .spacer {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10px;
   }
   .content {
     background-color: #000;

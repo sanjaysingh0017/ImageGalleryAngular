@@ -76,3 +76,11 @@
     align-items: center;
     line-height: 20px;
   }
+
+  .left, .right {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-grow: 1; width: 30%;z-index: 9;opacity:.5;
+  }
+

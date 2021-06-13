@@ -23,10 +23,27 @@
   <div style="flex-grow: 1; height: 10%;width: 100%;z-index: 9;justify-content: flex-end;display: flex;"><img src="assets/close.png" (click)="closeFullView()" title="close" height="50%" style="margin: 15px;cursor: pointer;"> </div>
   <div style="flex-grow: 8; display: flex; height: 10%;">
     <div style="flex-grow: 1; width: 10%;z-index: 9;"> </div>
-    <div style="flex-grow: 2; width: 30%;z-index: 9;"><img [src]="src" height="100%" width="100%"></div>
+    <div style="flex-grow: 2; width: 30%;z-index: 9;"><img [src]="srcFullView" height="100%" width="100%"></div>
     <div style="flex-grow: 1; width: 10%;justify-content: flex-end;z-index: 9;"> </div>
   </div>
   <div style="flex-grow: 1; height: 10%;"> </div>
 
 
 </div>
+
+<div class="slideShowfullView"
+  style="flex-direction: column; align-items:center;height:100vh; width:100%; position: fixed; display: flex; top:0;"
+  *ngIf="showSlideView">
+  <div style="height: 100%;width: 100%;position: absolute;background-color: #000; opacity: .9;"></div>
+
+  <div style="flex-grow: 1; height: 10%;width: 100%;z-index: 9;justify-content: flex-end;display: flex;"><img src="assets/close.png" (click)="closeSlideView()" title="close" height="50%" style="margin: 15px;cursor: pointer;"> </div>
+  <div style="flex-grow: 8; display: flex; height: 10%;">
+    <div class="left" ><img [src]="src1" height="75%" width="75%"> </div>
+    <div style="flex-grow: 1; width: 30%;z-index: 9;"><img [src]="src2" height="100%" width="100%"></div>
+    <div class="right"><img [src]="src3" height="75%" width="75%"> </div>
+  </div>
+  <div style="flex-grow: 1; height: 10%;"> </div>
+
+
+</div>
+
